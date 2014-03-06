@@ -2,11 +2,8 @@ from __future__ import division
 a=input('scrivi qui fin quanto vuoi calcolare i numeri primi ')
 b=range(a+1)
 d=[]
-i=range(a)
-i.remove(0)
-o=b
 for c in b:
-    for g in i:
+    for g in b:
         if c/2==g:
             d.append(c)
         else :
@@ -16,7 +13,6 @@ for h in d:
     for j in b:
         if h==j:
             b.remove(j)
-b.remove(0)
 b.remove(1)
 d=[]
 for y in b:
