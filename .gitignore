@@ -1,36 +1,50 @@
-*.py[cod]
-
-# C extensions
-*.so
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-lib
-lib64
-__pycache__
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
+from __future__ import division
+a=input('scrivi qui fin quanto vuoi calcolare i numeri primi ')
+b=range(a+1)
+d=[]
+i=range(a)
+i.remove(0)
+o=b
+for c in b:
+    for g in i:
+        if c/2==g:
+            d.append(c)
+        else :
+            if c/3==g:
+                d.append(c)
+            else:
+                if c/5==g:
+                    d.append(c)
+                else:
+                    if c/7==g :
+                        d.append(c)
+                    else :
+		        if c/11==g:
+			    d.append(c)
+			else:
+			    if c/13==g:
+			      d.append(c)
+for h in d:
+    for j in b:
+        if h==j:
+            b.remove(j)
+b.remove(0)
+b.remove(1)
+d=[]
+for y in b:
+  for z in b:
+    for x in b:
+      if y*z==x:
+	d.append(x)
+b.insert(0,1)
+b.insert(1,2)
+b.insert(2,3)
+b.insert(3,5)
+b.insert(4,7)
+b.insert(5,11)
+b.insert(6,13)
+for h in d:
+    for j in b:
+        if h==j:
+            b.remove(j)
+print b
