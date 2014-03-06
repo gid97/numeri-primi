@@ -12,9 +12,6 @@ for c in b:
         else :
             if c/3==g:
                 d.append(c)
-            else:
-                if c/5==g:
-                    d.append(c)
 for h in d:
     for j in b:
         if h==j:
@@ -30,7 +27,6 @@ for y in b:
 b.insert(0,1)
 b.insert(1,2)
 b.insert(2,3)
-b.insert(3,5)
 for h in d:
     for j in b:
         if h==j:
