@@ -15,15 +15,6 @@ for c in b:
             else:
                 if c/5==g:
                     d.append(c)
-                else:
-                    if c/7==g :
-                        d.append(c)
-                    else :
-		        if c/11==g:
-			    d.append(c)
-			else:
-			    if c/13==g:
-			      d.append(c)
 for h in d:
     for j in b:
         if h==j:
@@ -40,9 +31,6 @@ b.insert(0,1)
 b.insert(1,2)
 b.insert(2,3)
 b.insert(3,5)
-b.insert(4,7)
-b.insert(5,11)
-b.insert(6,13)
 for h in d:
     for j in b:
         if h==j:
