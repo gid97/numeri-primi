@@ -13,8 +13,7 @@ for h in d:
   for j in b:
       if h==j:
           b.remove(j)
-b.insert(1,2)
-b.insert(2,3)
+b.insert(0,2)
 d=[]
 for y in b:
   for z in b:
