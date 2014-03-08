@@ -11,6 +11,7 @@ for c in b:
         else :
             if c/3==g:
                 d.append(c)
+        
 for h in d:
   for j in b:
       if h==j:
